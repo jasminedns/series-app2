@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+// Fonts
+$font-roboto: "Roboto", "sans-serif";
+$font-lato: "Lato", "sans-serif";
+
+// Font sizes
+$font-s: 1rem;
+$font-m: 1.5rem;
+$font-l: 2rem;
+$font-xl: 3rem;
+
+// Sizes
+
+$size-s: 8px;
+$size-m: 16px;
+$size-l: 24px;
+$size-xl: 32px;
+
+// Colors
+$color-title-primary: #fff;
+$color-title-secondary: #072740;
+$color-text-primary: #F5E6C8;
+$color-text-secondary: #0a3a5f;
+$color-bg-primary: #2E2A24;
+$color-bg-secondary: #fad279;
+$color-bg-secondary-hover: #f8c451;
+
+// Breakpoints
+
+$breakpoint-tablet: 1024px;
+$breakpoint-mobile: 500px;

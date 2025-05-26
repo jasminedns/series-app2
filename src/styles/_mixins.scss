@@ -1,0 +1,52 @@
+@import './variables';
+
+@mixin title ($color, $size) {
+    color: $color;
+    font-size: $size;
+    margin: 0;
+}
+
+@mixin margin-padding ($margin, $padding) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin flex-justify ($space) {
+    display: flex;
+    justify-content: $space;
+}
+
+@mixin background-image ($image, $size, $position) {
+    background: {
+        image: $image;
+        size: $size;
+        position: $position;
+    };
+}
+
+@mixin mobile-tablet-series-display ($totWidth, $factor, $imgHeight, $imgWidth) {
+    flex: 0 0 calc($totWidth - ($factor * $size-s));
+    margin: $size-s;
+    padding: $size-s;
+
+    h2 {
+        margin: $size-s;
+    }
+
+    img {
+        height: $imgHeight;
+        width: $imgWidth;
+    }
+}
+
+@mixin responsive($breakpoint) {
+    @media screen and (max-width: $breakpoint){
+        @content;
+    }
+}
+
+@mixin responsive-tablet($breakpoint) {
+    @media screen and (min-width: $breakpoint-mobile) and (max-width:$breakpoint){
+        @content;
+    }
+}

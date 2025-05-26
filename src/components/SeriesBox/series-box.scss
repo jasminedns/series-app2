@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+
+.info {
+    &__box {
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__genre {
+        &--names {
+            font-weight: 500;
+            margin: $size-s;
+        }
+    }
+
+    &__summary {
+        &--container {
+            padding: $size-s;
+        }
+    }
+}
+
