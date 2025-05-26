@@ -1,5 +1,5 @@
 import "./series-box.scss"
-import { seriesTypes } from "@/app/utils/types"
+import { seriesTypes } from "@/utils/types"
 import Image from "next/image"
 
 const SeriesBox = ({name, language, premiered, ended, summary, genres, rating, image}:seriesTypes) => {

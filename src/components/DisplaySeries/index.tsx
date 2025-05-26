@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { DisplaySeriesTypes } from "@/app/utils/types"
+import { DisplaySeriesTypes } from "@/utils/types"
 import '../../app/globals.scss'
 
 const DisplaySeries = ({name, rating, image}:DisplaySeriesTypes) => {
