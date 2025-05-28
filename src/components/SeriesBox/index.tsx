@@ -10,14 +10,20 @@ const SeriesBox = ({name, language, premiered, ended, summary, genres, rating, i
             <p><span>Language:</span> {language}</p>
             <p><span>Premiered:</span> {premiered}</p>
             {ended && ended !== null 
-                ? <p><span>Ended:</span> {ended}</p> 
-                : <span>Currently airing</span>
+                ? 
+                    <p><span>Ended:</span> {ended}</p> 
+                : 
+                    <span>Currently airing</span>
             }
             {rating && rating !== null ? <p><span>Average rating:</span> {rating}</p> : ""}
-            {genres && genres.length > 0 ?
-                <p className="info__genre--container"><span className="info__genre--category">Genre:</span> {genres.map((item, index) => (
-                    <span key={index} className="info__genre--names">{item}</span>))}
-                </p> 
+            {genres && genres.length > 0 
+                ?
+                    <p className="info__genre--container">
+                        <span className="info__genre--category">Genre:</span>   
+                        {genres.map((item, index) => (
+                            <span key={index} className="info__genre--names">{item}</span>
+                        ))}
+                    </p> 
                 : ""
             }
             <div className="info__summary--container" dangerouslySetInnerHTML={{ __html: summary }} />

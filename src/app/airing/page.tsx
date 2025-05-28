@@ -44,13 +44,12 @@ const Airing = () => {
             <h2 className="airing__title">Airing Shows</h2>
             <div className="airing__series--container">
                 {allAiring && allAiring.length > 0 
-                    ? (
+                    ? 
                         allAiring.map((item, index) => (
                             <DisplaySeries key={index} name={item.name} rating={item.rating} image={item.image} />
                         ))
-                    ) : (
+                    : 
                         allAiring && allAiring.length === 0 && <p>There's no airing series in our catalog at the moment!</p>
-                    )
                 }
             </div>
         </div>

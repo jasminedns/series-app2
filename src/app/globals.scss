@@ -17,154 +17,154 @@ body {
 }
 
 .header {
-  @include responsive($breakpoint-mobile) {
-      @include background-image(url("../../public/header-bg.jpg"), 100% auto, 100% 90%);
+    @include responsive($breakpoint-mobile) {
+        @include background-image(url("../../public/header-bg.jpg"), 100% auto, 100% 90%);
       
-      flex-direction: column;
-      padding: 0 0 $size-l 0;
-  }
+        flex-direction: column;
+        padding: 0 0 $size-l 0;
+    }
 
-  @include responsive-tablet($breakpoint-tablet) {
-      @include background-image(url("../../public/header-bg.svg"), cover, top);
-  }
+    @include responsive-tablet($breakpoint-tablet) {
+        @include background-image(url("../../public/header-bg.svg"), cover, top);
+    }
 
-  @include flex-justify(space-between);
-  @include background-image(url("../../public/header-bg.svg"), contain, top);
-  align-items: center;
-  background-repeat: repeat-x;
-  padding-bottom: $size-l;
-  position: relative;
-  z-index: 1;
+    @include flex-justify(space-between);
+    @include background-image(url("../../public/header-bg.svg"), contain, top);
+    align-items: center;
+    background-repeat: repeat-x;
+    padding-bottom: $size-l;
+    position: relative;
+    z-index: 1;
 
-  &__title {
-      @include responsive($breakpoint-mobile) {
-          background-color: #F7B72B;
-          padding-bottom: $size-l;
-          width: 100%;
-      }
+    &__title {
+        @include responsive($breakpoint-mobile) {
+            background-color: #F7B72B;
+            padding-bottom: $size-l;
+            width: 100%;
+        }
 
-      display: flex;
-      flex-direction: column;
-      padding: $size-m;
-      text-align: center;
-      width: 20%;
+        display: flex;
+        flex-direction: column;
+        padding: $size-m;
+        text-align: center;
+        width: 20%;
 
-      &--main {
-          @include title ($color-title-primary, $font-xl);
-      }
+        &--main {
+            @include title ($color-title-primary, $font-xl);
+        }
 
-      &--secondary {
-          @include title ($color-title-secondary, $font-m);
-          letter-spacing: $size-s;
-      }
-  }
+        &--secondary {
+            @include title ($color-title-secondary, $font-m);
+            letter-spacing: $size-s;
+        }
+    }
 
-  &__nav {
-      @include responsive($breakpoint-mobile) {
-          width: 100%;
-      }
-      
-      @include margin-padding( auto $size-m, $size-l);
+    &__nav {
+        @include responsive($breakpoint-mobile) {
+            width: 100%;
+        }
+        
+        @include margin-padding( auto $size-m, $size-l);
 
-      width: 50%;
+        width: 50%;
 
-      &--links {
-          @include flex-justify(space-evenly);
-          font-weight: bold;
-          text-transform: uppercase;
+        &--links {
+            @include flex-justify(space-evenly);
+            font-weight: bold;
+            text-transform: uppercase;
 
-          a {
-              color: $color-title-secondary;
-              cursor: pointer;
-              text-decoration: none;
-          }
+            a {
+                color: $color-title-secondary;
+                cursor: pointer;
+                text-decoration: none;
+            }
 
-          a:hover {
-              letter-spacing: 0.4px;
-              text-decoration: underline;
-          }
-      }
-  }
+            a:hover {
+                letter-spacing: 0.4px;
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .main {
-  @include responsive($breakpoint-mobile) {
-      min-height: 80%;
-      top: 20%;
-  }
+    @include responsive($breakpoint-mobile) {
+        min-height: 80%;
+        top: 20%;
+    }
 
-  @include flex-justify(center);
+    @include flex-justify(center);
 
-  align-items: center;
-  min-height: 91%;
-  position: absolute;
-  top: 9%;
-  width: 100%;
+    align-items: center;
+    min-height: 91%;
+    position: absolute;
+    top: 9%;
+    width: 100%;
 
-  &__text {
-      @include responsive($breakpoint-tablet) {
-          width: 100%;
-      }
+    &__text {
+        @include responsive($breakpoint-tablet) {
+            width: 100%;
+        }
 
-      @include margin-padding($size-xl auto $size-s auto, $size-l);
+        @include margin-padding($size-xl auto $size-s auto, $size-l);
 
-      color: $color-text-primary;
-      text-align: center;
-      width: 50%;
+        color: $color-text-primary;
+        text-align: center;
+        width: 50%;
 
-      &--button {
-          @include margin-padding($size-m, $size-m);
+        &--button {
+            @include margin-padding($size-m, $size-m);
 
-          background-color: $color-bg-secondary;
-          border: none;
-          border-radius: 10px;
-          color: $color-text-secondary;
-          cursor: pointer;
-          font-weight: bold;
+            background-color: $color-bg-secondary;
+            border: none;
+            border-radius: 10px;
+            color: $color-text-secondary;
+            cursor: pointer;
+            font-weight: bold;
 
-          &:hover {
-              background-color: $color-bg-secondary-hover;
-              text-decoration: underline;
-          }
-      }
-  }
+            &:hover {
+                background-color: $color-bg-secondary-hover;
+                text-decoration: underline;
+            }
+        }
+    }
 }
 
 .airing {
-  &__container {
-      color: $color-text-primary;
-  }
+    &__container {
+        color: $color-text-primary;
+    }
 
-  &__title {
-      font-size: $font-l;
-      text-align: center;
-  }
+    &__title {
+        font-size: $font-l;
+        text-align: center;
+    }
 
-  &__series {
-      &--container {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-      }
-  }
+    &__series {
+        &--container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
 }
 
 .series {
-  &__container {
-      @include responsive($breakpoint-mobile) {
-          @include mobile-tablet-series-display(100%, 2, 250px, 200px);
-          flex: 0 0 calc(100% - 2 * $size-s);
-      }
+    &__container {
+        @include responsive($breakpoint-mobile) {
+            @include mobile-tablet-series-display(100%, 2, 250px, 200px);
+            flex: 0 0 calc(100% - 2 * $size-s);
+        }
 
-      @include responsive-tablet($breakpoint-tablet) {
-          @include mobile-tablet-series-display(50%, 4, 350px, 300px);
-      }
+        @include responsive-tablet($breakpoint-tablet) {
+            @include mobile-tablet-series-display(50%, 4, 350px, 300px);
+        }
 
-      @include flex-justify(center);
-      @include margin-padding($size-m, $size-m);
+        @include flex-justify(center);
+        @include margin-padding($size-m, $size-m);
 
-      align-items: center;
-      flex-direction: column;
-      flex: 0 0 calc(33.33% - 2 * $size-m);
-  }
+        align-items: center;
+        flex-direction: column;
+        flex: 0 0 calc(33.33% - 2 * $size-m);
+    }
 }

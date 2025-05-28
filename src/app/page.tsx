@@ -28,7 +28,7 @@ export default function Home() {
         rating: data.rating.average,
         image: data.image.original
       }
-      console.log(seriesData)
+      
       setSeries(seriesData);
 
     } catch (error){
